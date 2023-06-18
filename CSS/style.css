@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;1,300&family=Source+Code+Pro:wght@200&display=swap');
+.container{
+  position: absolute;
+  max-width: 800px;
+  align-self: center;
+  display: flexbox;
+  border-radius: 10px;
+  background-color: #497174 ;
+  
+  margin: 10% 30%;
+  font-family: 'Poppins', sans-serif;
+  width: 50%;
+  height: auto;
+}
+
+header{
+
+  background-color: #EB6440 ;
+  font-size: 80%;
+  width: 50%;
+  font-style: italic;
+  color: #EFF5F5;
+  border-radius: 20px;
+  text-align: center;
+  margin-left: 25%;
+}
+
+main,button{
+  font-style: italic;
+  width: 100%;
+  color: #EFF5F5;
+  margin-bottom: 20%;
+}
+
+p{
+  margin: 30px;
+}
+
+.inputSection,.outputSection ,.explenationSection,.FahrinputSection,.FahroutputSection{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  
+}
+
+.inputButtonSection,.FahrinputButtonSection{
+  display: flex;
+  align-self: center;
+  margin-top: 10px;
+}
+
+button{
+  background-color: #EB6440;
+  border: none;
+  margin: 1px ;
+  border-radius: 5px;
+}
+
+button:hover{
+  background-color: #b7553a;
+}
+
+button:active{
+  transform: translateY(1.5px);
+}
+
+.inputSection label,.outputSection label,.explenationSection,.FahrinputSection,.FahroutputSection {
+  margin: 15px 30px;
+}
+
+#inputField,#outputField,#calculationField,#FahrinputField,#FahroutputField,#FahrcalculationField{
+  outline: none;
+  font-size: 18px;
+  border-radius: 5px;
+  border: solid #2E8A99;
+  padding: 10px;
+  align-self: center;
+  width: 70%;
+  
+}
+
+#inputField:focus,#outputField:focus,#calculationField:focus,#FahrinputField:focus,#FahroutputField:focus{
+  border: solid #0E2954;
+}
+
+.explenationSection{
+  margin-top: 10px
+}
+
+a{
+  text-decoration: none;
+}
+
+hr{
+  border-color: #9BABB8;
+  width: 90%;
+}
+
+footer{
+  background: #EB6440 ;
+  text-align: center;
+  font-size: 10px;
+}
