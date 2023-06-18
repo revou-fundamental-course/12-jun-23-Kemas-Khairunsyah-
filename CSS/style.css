@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;1,300&family=Source+Code+Pro:wght@200&display=swap');
-.container{
+
+.container {
   position: absolute;
   max-width: 800px;
   align-self: center;
   display: flexbox;
   border-radius: 10px;
-  background-color: #497174 ;
-  
-  margin: 10% 30%;
+  background-color: #497174;
+  margin: 0% 33%;
   font-family: 'Poppins', sans-serif;
   width: 50%;
   height: auto;
 }
 
-header{
+header {
 
-  background-color: #EB6440 ;
+  background-color: #EB6440;
   font-size: 80%;
   width: 50%;
   font-style: italic;
@@ -25,50 +25,66 @@ header{
   margin-left: 25%;
 }
 
-main,button{
+main,
+button {
   font-style: italic;
   width: 100%;
   color: #EFF5F5;
-  margin-bottom: 20%;
+  margin-bottom: 5%;
 }
 
-p{
-  margin: 30px;
+p {
+  margin: px;
 }
 
-.inputSection,.outputSection ,.explenationSection,.FahrinputSection,.FahroutputSection{
+.inputSection,
+.outputSection,
+.explenationSection,
+.FahrinputSection,
+.FahroutputSection {
   display: flex;
   flex-direction: column;
   align-content: center;
-  
+
 }
 
-.inputButtonSection,.FahrinputButtonSection{
+.inputButtonSection,
+.FahrinputButtonSection {
   display: flex;
   align-self: center;
   margin-top: 10px;
 }
 
-button{
+button {
   background-color: #EB6440;
   border: none;
-  margin: 1px ;
+  margin: 1px;
   border-radius: 5px;
 }
 
-button:hover{
+button:hover {
   background-color: #b7553a;
 }
 
-button:active{
+button:active {
   transform: translateY(1.5px);
 }
 
-.inputSection label,.outputSection label,.explenationSection,.FahrinputSection,.FahroutputSection {
+.inputSection label,
+.outputSection label,
+.explenationSection,
+.inputSection p,
+.FahrinputSection,
+.FahroutputSection {
   margin: 15px 30px;
 }
 
-#inputField,#outputField,#calculationField,#FahrinputField,#FahroutputField,#FahrcalculationField{
+#inputField,
+#outputField,
+#calculationField,
+#FahrinputField,
+#FahroutputField,
+#FahrcalculationField {
   outline: none;
   font-size: 18px;
   border-radius: 5px;
@@ -76,28 +92,34 @@ button:active{
   padding: 10px;
   align-self: center;
   width: 70%;
-  
+
 }
 
-#inputField:focus,#outputField:focus,#calculationField:focus,#FahrinputField:focus,#FahroutputField:focus{
+#inputField:focus,
+#outputField:focus,
+#calculationField:focus,
+#FahrinputField:focus,
+#FahroutputField:focus {
   border: solid #0E2954;
 }
 
-.explenationSection{
+.explenationSection {
   margin-top: 10px
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-hr{
+hr {
   border-color: #9BABB8;
   width: 90%;
 }
 
-footer{
-  background: #EB6440 ;
+footer {
+  background: #EB6440;
   text-align: center;
   font-size: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
