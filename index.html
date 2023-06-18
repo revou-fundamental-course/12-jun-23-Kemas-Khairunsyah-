@@ -12,11 +12,11 @@
     <h1><b>Temperature Conversition</b></h1>
   </header>
   <main>
-    <p>Masukkan suhu derajat Celsius(°C)ke kotak dibawah, lalu klik tombol konversi<br>
-    untuk mendapatkan hasil konversi dalam bentuk Farenheit (°F).</p>
     <form action="" method="post">
       <section class="inputSection">
-        <label for="inputField">Celsius(°C) :</label>
+        <p>Masukkan suhu derajat Celcius(°C)ke kotak dibawah, lalu klik tombol konversi<br>
+          untuk mendapatkan hasil konversi dalam bentuk Farenheit (°F).</p>
+        <label for="inputField">Celcius(°C) :</label>
         <input type="number" id="inputField"/>
         <div class="inputButtonSection">
           <button id="convertBtn">Konversi</button>
@@ -33,23 +33,23 @@
 
 
       <section class="explenationSection">
-        <section class="explenationSection">
-          <a href="#FahrinputField" id="fahrToCelLink">Fahrenheit ke Celsius</a>
-          
-        </section>
+        <a href="#FahrinputField" id="fahrToCelLink">Fahrenheit ke Celcius</a>
         <hr/>
-        <h4><b>Cara Konversi Dari (°C) ke Fahrenheit (°F)</b></h4>
+        <h4><b>Cara Konversi Dari Celcius (°C) ke Fahrenheit (°F)</b></h4>
         <p>Suhu <b><em>S</em></b> dalam derajat Fahrenheit (°F) sama dengan suhu <b><em>S</em></b> dalam derajat 
           Celcius (°C) kali 9/5 tambah 32<br>
-          <div><em>(S</em>(°C) x 9/5 + 32</div> 
+          <div><em>S</em>(°C) x 9/5 + 32</div> 
           <br>atau<br><br>
-          <div><em>S</em></b>(°C) x 9/5 + 32</div> 
+          <div>(<em>S</em></b>(°C) x 9/5) + 32</div> 
         </p>
         <hr/>
       </section>
 
 
+
       <section class="FahrinputSection">
+        <p>Masukkan suhu derajat Fahrenheit(°F)ke kotak dibawah, lalu klik tombol konversi<br>
+          untuk mendapatkan hasil konversi dalam bentuk Celcius (°C).</p>
         <label for="FahrinputField">Fahrenheit(°F) :</label>
         <input type="number" id="FahrinputField"/>
         <div class="FahrinputButtonSection">
@@ -59,12 +59,23 @@
         </div>
       </section>
       <section class="FahroutputSection">
-        <label for="FahroutputField">Celsius(°C) :</label>
+        <label for="FahroutputField">Celcius(°C) :</label>
         <input type="number" id="FahroutputField"/>
         <label for="FahrcalculationFIeld">Cara kalkulasi : </label>
         <textarea id="FahrcalculationField"></textarea>
       </section>
-
+      <section class="explenationSection">
+        <a href="#inputField" id="fahrToCelLink">Celcius ke Fahrenheit</a>
+        <hr/>
+        <h4><b>Cara Konversi Dari Fahrenheit (°F) ke Celcius (°C)</b></h4>
+        <p>Suhu <b><em>F</em></b> dalam derajat Celcius (°C) sama dengan suhu <b><em>F</em></b> dalam derajat 
+          Fahrenheit (°F) kurang 32 kali 5 di bagi 9<br>
+          <div><em>F</em>(°F) - 32 x 5/9</div> 
+          <br>atau<br><br>
+          <div><em>F</em></b>(°F) - (32 x 5/9)</div> 
+        </p>
+        <hr/>
+      </section>
       
     </form>
   </main>
