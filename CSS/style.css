@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;1,300&family=Source+Code+Pro:wght@200&display=swap');
 
 .container {
-  max-width: 80vh;
+  max-width: 1440px;
   position: absolute;
   align-self: center;
   border-radius: 10px;
   background-color: #497174;
   font-family: 'Poppins', sans-serif;
-  width: 100%;
-  height: auto;
+  width: 50%;
+  height: 80%;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-
+  background-color: #A2CDB0;;
 }
 
 header {
@@ -133,19 +133,21 @@ hr {
 footer {
   background: #EB6440;
   text-align: center;
-  font-size: 10px;
+  font-size: 1rem;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
 @media only screen and (max-width: 768px) {
   .container {
-    max-width: 700;
+    max-width: 80vh;
+    width: 100%;
+    height: 100%;
   }
 
   header {
     background-color: #EB6440;
-    font-size: 40%;
+    font-size: 48%;
     width: 25%;
     font-style: italic;
     color: #EFF5F5;
@@ -160,7 +162,7 @@ footer {
   }
 
   body {
-    margin-top: 30vh;
+    margin-top: 25vh;
     display: flex;
     height: 50vh;
     justify-content: center;
