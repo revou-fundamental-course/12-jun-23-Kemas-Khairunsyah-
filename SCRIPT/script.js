@@ -1,87 +1,64 @@
 const inputField = document.getElementById('inputField');
 const outputField = document.getElementById('outputField');
 const calculationField = document.getElementById('calculationField');
-const convertBtn = document.getElementById('convertBtn');
-const resetBtn = document.getElementsByName('resetBtn')[0];
-const reverseBtn = document.getElementsByName('reverseBtn')[0];
+const howtofah = document.getElementById("celciusToFah");
+const howtocel = document.getElementById("fahrenheitToCel");
+let isCelcius = true;
+
+function convertToFahrenheit(fahrenheit) {
+  const suhu = inputField.value;
+  const cara = calculationField;
+  const howto = howtofah;
+  const hasil = (suhu * 9/5) + 32 ;
+
+  outputField.value = hasil;
+  cara.innerHTML = "(" + suhu +" °C x 9/5) + 32 = "+ hasil + " °F";
+  howto.style.display = "block"; 
+}
 
 function convertToCelcius(fahrenheit) {
-  return (fahrenheit - 32) * 5/9;
+  const suhu = inputField.value;
+  const cara = calculationField;
+  const howto = howtocel;
+  const hasil = (suhu - 32) * 5/9 ;
+
+  outputField.value = hasil;
+  cara.innerHTML = "(" + suhu +" °F - 32 ) x 5/9 = "+ hasil + " °C";
+  howto.style.display = "block"; 
 }
 
-function convertToFahrenheit(celcius) {
-  return celcius * 9/5 + 32;
+function reset(){
+  inputField.value = null;
+  outputField.value = null;
+  calculationField.innerHTML = "";
+  howtocel.style.display = "none";
+  howtofah.style.display = "none";
 }
 
-function celciusCalculate() {
-  const inputValue = parseFloat(inputField.value);
-  
-  if(!isNaN(inputValue)) {
-    const fahrenheitValue = convertToFahrenheit(inputValue);
-    outputField.value = fahrenheitValue.toFixed(2);
-    
-    const calculationText = `(${inputValue}°C x 9/5) + 32 = ${fahrenheitValue.toFixed(2)}°F`;
-    calculationField.value = calculationText;
+function reverse(){
+  if (isCelcius)
+  {
+    isCelcius = false;
+    reset(); 
+    document.getElementById("input").innerHTML = "Fahrenheit(°F) : ";
+    document.getElementById("output").innerHTML = "Celcius(°C) : ";
+  }
+  else
+  {
+    isCelcius = true;
+    reset();
+    document.getElementById("input").innerHTML = "Celcius(°C) : ";
+    document.getElementById("output").innerHTML = "Fahrenheit(°F) : ";
   }
 }
 
-convertBtn.addEventListener('click', function(event) {
-  event.preventDefault();
-  celciusCalculate();
-});
-
-resetBtn.addEventListener('click', function(event) {
-  event.preventDefault();
-  inputField.value = '';
-  outputField.value = '';
-  calculationField.value = '';
-});
-
-reverseBtn.addEventListener('click', function(event) {
-  event.preventDefault();
-  const temp = inputField.value;
-  inputField.value = outputField.value;
-  outputField.value = temp;
-  celciusCalculate();
-});
-
-
-//kode dari Fahrenheit ke Celcius 
-const FahrinputField = document.getElementById('FahrinputField');
-const FahroutputField = document.getElementById('FahroutputField');
-const FahrcalculationField = document.getElementById('FahrcalculationField');
-const FahrconvertBtn = document.getElementById('FahrconvertBtn');
-const FahrresetBtn = document.getElementsByName('FahrresetBtn')[0];
-const FahrreverseBtn = document.getElementsByName('FahrreverseBtn')[0];
-
-function fahrenheitCalculate() {
-  const inputValue = parseFloat(FahrinputField.value);
-  
-  if(!isNaN(inputValue)) {
-    const celciusValues = convertToCelcius(inputValue);
-    FahroutputField.value = celciusValues.toFixed(2);
-    
-    const calculationText = `(${inputValue}°F - 32) x 5/9 = ${celciusValues.toFixed(2)}°C`;
-    FahrcalculationField.value = calculationText;
+function konversi(){
+  if (isCelcius)
+  {
+    convertToFahrenheit();
+  }
+  else
+  {
+    convertToCelcius();
   }
 }
-
-FahrconvertBtn.addEventListener('click', function(event) {
-  event.preventDefault();
-  fahrenheitCalculate();
-});
-
-FahrresetBtn.addEventListener('click', function(event) {
-  event.preventDefault();
-  FahrinputField.value = '';
-  FahroutputField.value = '';
-  FahrcalculationField.value = '';
-});
-
-FahrreverseBtn.addEventListener('click', function(event) {
-  event.preventDefault();
-  const temp = FahrinputField.value;
-  FahrinputField.value = outputField.value;
-  FahroutputField.value = temp;
-  fahrenheitCalculate();
-});
