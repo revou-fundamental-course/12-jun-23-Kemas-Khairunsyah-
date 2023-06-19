@@ -60,10 +60,14 @@ p {
   margin-top: 10px;
 }
 
+.inputButtonSection {
+  width: 50%;
+}
+
 button {
   background-color: #EB6440;
   border: none;
-  margin: 1px;
+  margin: 2%;
   border-radius: 5px;
 }
 
@@ -113,7 +117,7 @@ button:active {
 }
 
 #celciusToFah,
-#fahrenheitToCel{
+#fahrenheitToCel {
   display: none;
 }
 
@@ -136,24 +140,33 @@ footer {
 
 @media only screen and (max-width: 768px) {
   .container {
-    margin: 0 5%;
-    max-width: none;
+    max-width: 700;
   }
 
   header {
     background-color: #EB6440;
-    font-size: 60%;
-    width: fit-content;
+    font-size: 40%;
+    width: 25%;
     font-style: italic;
     color: #EFF5F5;
     border-radius: 20px;
     text-align: center;
-    margin-left:%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 38%;
   }
 
-  body{
-    display: block;
+  body {
+    margin-top: 30vh;
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
   }
+
   #inputField,
   #outputField,
   #calculationField,
