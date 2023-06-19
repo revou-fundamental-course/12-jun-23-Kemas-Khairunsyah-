@@ -1,28 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;1,300&family=Source+Code+Pro:wght@200&display=swap');
 
 .container {
+  max-width: 80vh;
   position: absolute;
-  max-width: 800px;
   align-self: center;
-  display: flexbox;
   border-radius: 10px;
   background-color: #497174;
-  margin: 0% 33%;
   font-family: 'Poppins', sans-serif;
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
-header {
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 
+}
+
+header {
   background-color: #EB6440;
-  font-size: 80%;
-  width: 50%;
+  font-size: 60%;
+  width: 40%;
   font-style: italic;
   color: #EFF5F5;
   border-radius: 20px;
   text-align: center;
-  margin-left: 25%;
+  margin-left: 32%;
 }
 
 main,
@@ -107,6 +112,11 @@ button:active {
   margin-top: 10px
 }
 
+#celciusToFah,
+#fahrenheitToCel{
+  display: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -122,4 +132,34 @@ footer {
   font-size: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 0 5%;
+    max-width: none;
+  }
+
+  header {
+    background-color: #EB6440;
+    font-size: 60%;
+    width: fit-content;
+    font-style: italic;
+    color: #EFF5F5;
+    border-radius: 20px;
+    text-align: center;
+    margin-left:%;
+  }
+
+  body{
+    display: block;
+  }
+  #inputField,
+  #outputField,
+  #calculationField,
+  #FahrinputField,
+  #FahroutputField,
+  #FahrcalculationField {
+    width: 90%;
+  }
 }
