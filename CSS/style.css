@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;1,300&family=Source+Code+Pro:wght@200&display=swap');
 
 .container {
-  max-width: 1440px;
+  max-width: 1400px;
   position: absolute;
   align-self: center;
   border-radius: 10px;
+  padding-bottom: 20%;
   background-color: #497174;
   font-family: 'Poppins', sans-serif;
-  width: 50%;
-  height: 80%;
+  margin-top: 3.5%;
+  width: 40%;
+  height: 70%;
 }
 
 body {
@@ -113,7 +115,7 @@ button:active {
 }
 
 .explenationSection {
-  margin-top: 10px
+  margin-bottom: 30px;
 }
 
 #celciusToFah,
@@ -138,8 +140,9 @@ footer {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   width: 100%;
-  position: absolute;
+  position: inherit;
   bottom: 0px;
+  padding-right: -1000%;
 }
 
 
@@ -148,6 +151,7 @@ footer {
     max-width: 80vh;
     width: 100%;
     height: 100%;
+    padding-bottom: 50%;
   }
 
   header {
@@ -182,8 +186,8 @@ footer {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 100%;
-    position: fixed;
-    bottom: 0px;
+    position: absolute;
+    bottom: ;
   }
 
   #inputField,
@@ -194,19 +198,14 @@ footer {
   #FahrcalculationField {
     width: 90%;
   }
-
-  footer {
-    background: #EB6440;
-    display: flexbox;
-    text-align: center;
-    font-size: 1rem;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    width: 100%;
-    position: fixed;
-    bottom: 0px;
-  }
 }
 
-
-
+@media only screen and (max-width: 876px) {
+  .container {
+    max-width: 80vh;
+    margin-top: 60%;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 60%;
+  }
+}

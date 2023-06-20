@@ -36,7 +36,7 @@ function convertToCelcius() {
 }
 
 
-function reset(){
+function reset() {
   inputField.value = null;
   outputField.value = null;
   calculationField.innerHTML = "";
@@ -44,9 +44,8 @@ function reset(){
   howtofah.style.display = "none";
 }
 
-function reverse(){
-  if (isCelcius)
-  {
+function reverse() {
+  if (isCelcius) {
     isCelcius = false;
     reset();
     document.getElementById("input").innerHTML = "Fahrenheit(°F) : ";
@@ -60,9 +59,8 @@ function reverse(){
   }
 }
 
-function konversi(){
-  if (isCelcius)
-  {
+function konversi() {
+  if (isCelcius) {
     convertToFahrenheit();
   }
   else {
