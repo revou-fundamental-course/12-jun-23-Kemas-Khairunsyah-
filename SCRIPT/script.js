@@ -5,7 +5,8 @@ const howtofah = document.getElementById("celciusToFah");
 const howtocel = document.getElementById("fahrenheitToCel");
 let isCelcius = true;
 
-function convertToFahrenheit(fahrenheit) {
+function convertToFahrenheit(fahrenheit) 
+{
   const suhu = inputField.value;
   const cara = calculationField;
   const howto = howtofah;
@@ -16,7 +17,8 @@ function convertToFahrenheit(fahrenheit) {
   howto.style.display = "block"; 
 }
 
-function convertToCelcius(fahrenheit) {
+function convertToCelcius(fahrenheit) 
+{
   const suhu = inputField.value;
   const cara = calculationField;
   const howto = howtocel;
@@ -27,7 +29,8 @@ function convertToCelcius(fahrenheit) {
   howto.style.display = "block"; 
 }
 
-function reset(){
+function reset()
+{
   inputField.value = null;
   outputField.value = null;
   calculationField.innerHTML = "";
@@ -35,7 +38,8 @@ function reset(){
   howtofah.style.display = "none";
 }
 
-function reverse(){
+function reverse()
+{
   if (isCelcius)
   {
     isCelcius = false;
@@ -52,7 +56,8 @@ function reverse(){
   }
 }
 
-function konversi(){
+function konversi()
+{
   if (isCelcius)
   {
     convertToFahrenheit();
