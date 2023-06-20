@@ -152,7 +152,7 @@ footer {
   header {
     background-color: #EB6440;
     font-size: 48%;
-    width: 25%;
+    width: 36%;
     font-style: italic;
     color: #EFF5F5;
     border-radius: 20px;
@@ -162,7 +162,7 @@ footer {
     align-items: center;
     margin-top: 5%;
     margin-bottom: 2%;
-    margin-left: 38%;
+    margin-left: 386;
   }
 
   body {
@@ -171,6 +171,18 @@ footer {
     height: 50vh;
     justify-content: center;
     align-items: center;
+  }
+
+  footer {
+    background: #EB6440;
+    display: flexbox;
+    text-align: center;
+    font-size: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
   }
 
   #inputField,

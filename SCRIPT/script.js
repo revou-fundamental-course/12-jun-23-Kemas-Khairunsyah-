@@ -5,10 +5,19 @@ const howtofah = document.getElementById("celciusToFah");
 const howtocel = document.getElementById("fahrenheitToCel");
 let isCelcius = true;
 
+// <<<<<<< master
+function convertToFahrenheit() {
+// =======
 function convertToFahrenheit(fahrenheit) 
 {
+// >>>>>>> main
   const suhu = inputField.value;
   const cara = calculationField;
+  if (suhu.trim() === "" ||isNaN(suhu))
+  {
+    cara.innerHTML = ("Input Tidak Valid!!!");
+    return
+  }
   const howto = howtofah;
   const hasil = (suhu * 9/5) + 32 ;
 
@@ -17,10 +26,19 @@ function convertToFahrenheit(fahrenheit)
   howto.style.display = "block"; 
 }
 
+// <<<<<<< master
+function convertToCelcius() {
+// =======
 function convertToCelcius(fahrenheit) 
 {
+// >>>>>>> main
   const suhu = inputField.value;
   const cara = calculationField;
+  if (suhu.trim() === "" ||isNaN(suhu))
+  {
+    cara.innerHTML = ("Input Tidak Valid!!!");
+    return
+  }
   const howto = howtocel;
   const hasil = (suhu - 32) * 5/9 ;
 
