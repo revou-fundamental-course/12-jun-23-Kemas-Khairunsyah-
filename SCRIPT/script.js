@@ -21,7 +21,6 @@ function convertToFahrenheit() {
 }
 
 function convertToCelcius() {
-
   const suhu = inputField.value;
   const cara = calculationField;
   if (suhu.trim() === "" || isNaN(suhu)) {
@@ -36,7 +35,8 @@ function convertToCelcius() {
   howto.style.display = "block";
 }
 
-function reset() {
+
+function reset(){
   inputField.value = null;
   outputField.value = null;
   calculationField.innerHTML = "";
@@ -44,8 +44,9 @@ function reset() {
   howtofah.style.display = "none";
 }
 
-function reverse() {
-  if (isCelcius) {
+function reverse(){
+  if (isCelcius)
+  {
     isCelcius = false;
     reset();
     document.getElementById("input").innerHTML = "Fahrenheit(°F) : ";
@@ -59,8 +60,9 @@ function reverse() {
   }
 }
 
-function konversi() {
-  if (isCelcius) {
+function konversi(){
+  if (isCelcius)
+  {
     convertToFahrenheit();
   }
   else {
