@@ -12,76 +12,45 @@
     <h1><b>Temperature Conversition</b></h1>
   </header>
   <main>
-    <form action="" method="post">
-      <section class="inputSection">
-        <p>Masukkan suhu derajat Celcius(°C)ke kotak dibawah, lalu klik tombol konversi<br>
-          untuk mendapatkan hasil konversi dalam bentuk Farenheit (°F).</p>
-        <label for="inputField">Celcius(°C) :</label>
-        <input type="number" id="inputField"/>
-        <div class="inputButtonSection">
-          <button id="convertBtn">Konversi</button>
-          <button name="resetBtn">Reset</button>
-          <button name="reverseBtn">Reverse</button>
+    
+    <section class="inputSection">
+      <p>Masukkan suhu derajat Celcius(°C)ke kotak dibawah, lalu klik tombol konversi<br>
+        untuk mendapatkan hasil konversi dalam bentuk Farenheit (°F).</p>
+      <label for="inputField" id="input">Celcius(°C) :</label>
+      <input type="number" id="inputField"/>
+      <div class="inputButtonSection">
+        <button id="convertBtn" onclick="konversi()">Konversi</button>
+        <button id="resetBtn" onclick="reset()">Reset</button>
+        <button id="reverseBtn" onclick="reverse()">Reverse</button>
+      </div>
+    </section>
+
+    <section class="outputSection">
+      <label for="outputField" id="output">Fahrenheit(°F) :</label>
+      <input type="number" id="outputField"/>
+      <label for="calculationFIeld">Cara kalkulasi : </label>
+      <textarea id="calculationField"></textarea>
+    </section>
+
+    <section class="explenationSection">
+      <div id="celciusToFah">
+        <h4>Cara konversi suhu dari Celcius ke Fahrenheit</h4>
+        <p>Untuk mengkonversi suhu dari (°C) ke (°F) bisa dangan menggunakan rumus :</p>
+        <p>°F =(°C x 9/5) + 32</p>
+      </div>
+      <div id="fahrenheitToCel">
+          <h4>Cara konversi suhu dari Fahrenheit e Celcius</h4>
+          <p>Untuk mengkonversi suhu dari (°F) ke (°C) bisa dangan menggunakan rumus :</p>
+          <p>°C = 5/9 + (°F - 32) </p>
         </div>
-      </section>
-      <section class="outputSection">
-        <label for="outputField">Fahrenheit(°F) :</label>
-        <input type="number" id="outputField"/>
-        <label for="calculationFIeld">Cara kalkulasi : </label>
-        <textarea id="calculationField"></textarea>
-      </section>
-      <section class="explenationSection">
-        <a href="#FahrinputField" id="fahrToCelLink">Fahrenheit ke Celcius</a>
-        <hr/>
-        <h4><b>Cara Konversi Dari Celcius (°C) ke Fahrenheit (°F)</b></h4>
-        <p>Suhu <b><em>S</em></b> dalam derajat Fahrenheit (°F) sama dengan suhu <b><em>S</em></b> dalam derajat 
-          Celcius (°C) kali 9/5 tambah 32<br>
-          <div><em>S</em>(°C) x 9/5 + 32</div> 
-          <br>atau<br><br>
-          <div>(<em>S</em></b>(°C) x 9/5) + 32</div> 
-        </p>
-        <hr/>
-      </section>
+      <hr/>
+    </section>
 
-
-
-      <section class="FahrinputSection">
-        <p>Masukkan suhu derajat Fahrenheit(°F)ke kotak dibawah, lalu klik tombol konversi<br>
-          untuk mendapatkan hasil konversi dalam bentuk Celcius (°C).</p>
-        <label for="FahrinputField">Fahrenheit(°F) :</label>
-        <input type="number" id="FahrinputField"/>
-        <div class="FahrinputButtonSection">
-          <button id="FahrconvertBtn">Konversi</button>
-          <button name="FahrresetBtn">Reset</button>
-          <button name="FahrreverseBtn">Reverse</button>
-        </div>
-      </section>
-      <section class="FahroutputSection">
-        <label for="FahroutputField">Celcius(°C) :</label>
-        <input type="number" id="FahroutputField"/>
-        <label for="FahrcalculationFIeld">Cara kalkulasi : </label>
-        <textarea id="FahrcalculationField"></textarea>
-      </section>
-      <section class="explenationSection">
-        <a href="#inputField" id="fahrToCelLink">Celcius ke Fahrenheit</a>
-        <hr/>
-        <h4><b>Cara Konversi Dari Fahrenheit (°F) ke Celcius (°C)</b></h4>
-        <p>Suhu <b><em>F</em></b> dalam derajat Celcius (°C) sama dengan suhu <b><em>F</em></b> dalam derajat 
-          Fahrenheit (°F) kurang 32 kali 5 di bagi 9<br>
-          <div><em>F</em>(°F) - 32 x 5/9</div> 
-          <br>atau<br><br>
-          <div><em>F</em></b>(°F) - (32 x 5/9)</div> 
-        </p>
-        <hr/>
-      </section>
-      
-    </form>
   </main>
   <footer>
-  <i>@Tugas.RevoU</i>
+  <i>Made by Kemas Khairunsyah 🤓</i>
   </footer>
   </div>
-
-  <script src="script/script.js"></script>
+  <script src="SCRIPT/script.js"></script>
 </body>
 </html>

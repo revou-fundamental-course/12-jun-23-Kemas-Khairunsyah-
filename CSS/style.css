@@ -1,28 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;1,300&family=Source+Code+Pro:wght@200&display=swap');
 
 .container {
+  max-width: 1400px;
   position: absolute;
-  max-width: 800px;
   align-self: center;
-  display: flexbox;
   border-radius: 10px;
+  padding-bottom: 20%;
   background-color: #497174;
-  margin: 0% 33%;
   font-family: 'Poppins', sans-serif;
-  width: 50%;
-  height: auto;
+  margin-top: 3.5%;
+  width: 40%;
+  height: 70%;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #A2CDB0;
 }
 
 header {
-
   background-color: #EB6440;
-  font-size: 80%;
-  width: 50%;
+  font-size: 60%;
+  width: 40%;
   font-style: italic;
   color: #EFF5F5;
   border-radius: 20px;
   text-align: center;
-  margin-left: 25%;
+  margin-left: 32%;
 }
 
 main,
@@ -55,10 +62,14 @@ p {
   margin-top: 10px;
 }
 
+.inputButtonSection {
+  width: 50%;
+}
+
 button {
   background-color: #EB6440;
   border: none;
-  margin: 1px;
+  margin: 2%;
   border-radius: 5px;
 }
 
@@ -104,7 +115,12 @@ button:active {
 }
 
 .explenationSection {
-  margin-top: 10px
+  margin-bottom: 30px;
+}
+
+#celciusToFah,
+#fahrenheitToCel {
+  display: none;
 }
 
 a {
@@ -118,8 +134,78 @@ hr {
 
 footer {
   background: #EB6440;
+  display: flexbox;
   text-align: center;
-  font-size: 10px;
+  font-size: 1rem;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  width: 100%;
+  position: inherit;
+  bottom: 0px;
+  padding-right: -1000%;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 80vh;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50%;
+  }
+
+  header {
+    background-color: #EB6440;
+    font-size: 48%;
+    width: 36%;
+    font-style: italic;
+    color: #EFF5F5;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 386;
+  }
+
+  body {
+    margin-top: 25vh;
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    background: #EB6440;
+    display: flexbox;
+    text-align: center;
+    font-size: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: ;
+  }
+
+  #inputField,
+  #outputField,
+  #calculationField,
+  #FahrinputField,
+  #FahroutputField,
+  #FahrcalculationField {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 876px) {
+  .container {
+    max-width: 80vh;
+    margin-top: 60%;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 60%;
+  }
 }
