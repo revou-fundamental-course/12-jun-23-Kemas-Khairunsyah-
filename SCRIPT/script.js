@@ -8,34 +8,33 @@ let isCelcius = true;
 function convertToFahrenheit() {
   const suhu = inputField.value;
   const cara = calculationField;
-  if (suhu.trim() === "" ||isNaN(suhu))
-  {
+  if (suhu.trim() === "" || isNaN(suhu)) {
     cara.innerHTML = ("Input Tidak Valid!!!");
-    return
+    return;
   }
   const howto = howtofah;
-  const hasil = (suhu * 9/5) + 32 ;
+  const hasil = (suhu * 9 / 5) + 32;
 
   outputField.value = hasil;
-  cara.innerHTML = "(" + suhu +" °C x 9/5) + 32 = "+ hasil + " °F";
-  howto.style.display = "block"; 
+  cara.innerHTML = "(" + suhu + " °C x 9/5) + 32 = " + hasil + " °F";
+  howto.style.display = "block";
 }
 
 function convertToCelcius() {
   const suhu = inputField.value;
   const cara = calculationField;
-  if (suhu.trim() === "" ||isNaN(suhu))
-  {
+  if (suhu.trim() === "" || isNaN(suhu)) {
     cara.innerHTML = ("Input Tidak Valid!!!");
-    return
+    return;
   }
   const howto = howtocel;
-  const hasil = (suhu - 32) * 5/9 ;
+  const hasil = (suhu - 32) * 5 / 9;
 
   outputField.value = hasil;
-  cara.innerHTML = "(" + suhu +" °F - 32 ) x 5/9 = "+ hasil + " °C";
-  howto.style.display = "block"; 
+  cara.innerHTML = "(" + suhu + " °F - 32 ) x 5/9 = " + hasil + " °C";
+  howto.style.display = "block";
 }
+
 
 function reset(){
   inputField.value = null;
@@ -49,12 +48,11 @@ function reverse(){
   if (isCelcius)
   {
     isCelcius = false;
-    reset(); 
+    reset();
     document.getElementById("input").innerHTML = "Fahrenheit(°F) : ";
     document.getElementById("output").innerHTML = "Celcius(°C) : ";
   }
-  else
-  {
+  else {
     isCelcius = true;
     reset();
     document.getElementById("input").innerHTML = "Celcius(°C) : ";
@@ -67,8 +65,7 @@ function konversi(){
   {
     convertToFahrenheit();
   }
-  else
-  {
+  else {
     convertToCelcius();
   }
 }

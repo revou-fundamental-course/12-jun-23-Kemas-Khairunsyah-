@@ -142,6 +142,7 @@ footer {
   bottom: 0px;
 }
 
+
 @media only screen and (max-width: 768px) {
   .container {
     max-width: 80vh;
@@ -193,4 +194,19 @@ footer {
   #FahrcalculationField {
     width: 90%;
   }
+
+  footer {
+    background: #EB6440;
+    display: flexbox;
+    text-align: center;
+    font-size: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+  }
 }
+
+
+
