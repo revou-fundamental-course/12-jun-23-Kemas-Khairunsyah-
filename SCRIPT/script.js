@@ -5,50 +5,38 @@ const howtofah = document.getElementById("celciusToFah");
 const howtocel = document.getElementById("fahrenheitToCel");
 let isCelcius = true;
 
-// <<<<<<< master
 function convertToFahrenheit() {
-// =======
-function convertToFahrenheit(fahrenheit) 
-{
-// >>>>>>> main
   const suhu = inputField.value;
   const cara = calculationField;
-  if (suhu.trim() === "" ||isNaN(suhu))
-  {
+  if (suhu.trim() === "" || isNaN(suhu)) {
     cara.innerHTML = ("Input Tidak Valid!!!");
-    return
+    return;
   }
   const howto = howtofah;
-  const hasil = (suhu * 9/5) + 32 ;
+  const hasil = (suhu * 9 / 5) + 32;
 
   outputField.value = hasil;
-  cara.innerHTML = "(" + suhu +" °C x 9/5) + 32 = "+ hasil + " °F";
-  howto.style.display = "block"; 
+  cara.innerHTML = "(" + suhu + " °C x 9/5) + 32 = " + hasil + " °F";
+  howto.style.display = "block";
 }
 
-// <<<<<<< master
 function convertToCelcius() {
-// =======
-function convertToCelcius(fahrenheit) 
-{
-// >>>>>>> main
+
   const suhu = inputField.value;
   const cara = calculationField;
-  if (suhu.trim() === "" ||isNaN(suhu))
-  {
+  if (suhu.trim() === "" || isNaN(suhu)) {
     cara.innerHTML = ("Input Tidak Valid!!!");
-    return
+    return;
   }
   const howto = howtocel;
-  const hasil = (suhu - 32) * 5/9 ;
+  const hasil = (suhu - 32) * 5 / 9;
 
   outputField.value = hasil;
-  cara.innerHTML = "(" + suhu +" °F - 32 ) x 5/9 = "+ hasil + " °C";
-  howto.style.display = "block"; 
+  cara.innerHTML = "(" + suhu + " °F - 32 ) x 5/9 = " + hasil + " °C";
+  howto.style.display = "block";
 }
 
-function reset()
-{
+function reset() {
   inputField.value = null;
   outputField.value = null;
   calculationField.innerHTML = "";
@@ -56,17 +44,14 @@ function reset()
   howtofah.style.display = "none";
 }
 
-function reverse()
-{
-  if (isCelcius)
-  {
+function reverse() {
+  if (isCelcius) {
     isCelcius = false;
-    reset(); 
+    reset();
     document.getElementById("input").innerHTML = "Fahrenheit(°F) : ";
     document.getElementById("output").innerHTML = "Celcius(°C) : ";
   }
-  else
-  {
+  else {
     isCelcius = true;
     reset();
     document.getElementById("input").innerHTML = "Celcius(°C) : ";
@@ -74,14 +59,11 @@ function reverse()
   }
 }
 
-function konversi()
-{
-  if (isCelcius)
-  {
+function konversi() {
+  if (isCelcius) {
     convertToFahrenheit();
   }
-  else
-  {
+  else {
     convertToCelcius();
   }
 }
